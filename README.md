@@ -1,14 +1,16 @@
+
+
 ## Prueba de Maquetación Front.
 
 El objetivo de esta prueba es conocer las habilidades y aptitudes del candidato/a que por voluntad propia desee hacerla.
 Metodologías y estructuración recomendada para la prueba:
 
-- 1. BEM
-- 2. SCSS
-- 3. Variables scss
-- 4. Mixins y functions
-- 5. Componentización del proyecto
-- 6. Interacción JavaScript u otros
+-  BEM
+-  SCSS
+-  Variables scss
+-  Mixins y functions
+-  Componentización del proyecto
+-  Interacción JavaScript u otros
 
 # Descripción
 
@@ -21,15 +23,23 @@ Cualquier añadido que se quiera aportar es bienvenido.
 # Recursos
 
 - Colores:
-- Primary: #0076FF
-- Secondary: #EEF9FF
-- White: #FFFFFF
-- Grey: #D9D9D9
+
+Primary: #0076FF
+Secondary: #EEF9FF
+White: #FFFFFF
+Grey: #D9D9D9
+
 - Fuente:
-- Roboto (se adjunta en archivos)
+
+Roboto (se adjunta en archivos)
 
 # Apariencia
 
+
+
 <img src="./src/images/estado-inicial.jpg" alt="estado inicial web" width="750">
+
+
+
 
 <img src="./src/images/estado-inicial.jpg" alt="estado modificado web con formulario"width="750"/>
