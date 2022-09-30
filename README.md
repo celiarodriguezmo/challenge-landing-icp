@@ -42,4 +42,4 @@ Roboto (se adjunta en archivos)
 
 
 
-<img src="./src/images/estado-inicial.jpg" alt="estado modificado web con formulario"width="750"/>
+<img src="./src/images/estado-modificando.jpg" alt="estado modificado web con formulario"width="750"/>
