@@ -5,15 +5,15 @@ import telefonoRoto from "../images/telefono-roto.jpg";
 function App() {
   return (
     <div className='App'>
-      <header>
-        <nav>
-          <ul>
-            <li>Inicio</li>
-            <li>Incidencias</li>
-            <li>Almacén</li>
-            <li>Servicio técnico</li>
+      <header className='header'>
+        <nav className='navMenu'>
+          <ul className='menuList'>
+            <li className='menuList__item'>Inicio</li>
+            <li className='menuList__item'>Incidencias</li>
+            <li className='menuList__item'>Almacén</li>
+            <li className='menuList__item'>Servicio técnico</li>
           </ul>
-          <img src={avatar} alt='imagen de perfil' />
+          <img className='menuImage' src={avatar} alt='imagen de perfil' />
         </nav>
       </header>
       <main>

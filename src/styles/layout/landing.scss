@@ -1,0 +1,30 @@
+.App {
+  font-family: $Roboto;
+}
+.header {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $Secondary;
+  color: $Primary;
+}
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.menuList {
+  width: 70%;
+  display: flex;
+  font-weight: 700;
+  font-size: 1rem;
+
+  &__item {
+    margin: 20px;
+  }
+}
+.menuImage {
+  width: 60px;
+  border-radius: 50%;
+}
