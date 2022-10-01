@@ -6,7 +6,7 @@ import Main from "./Main";
 function App() {
   const [hidden, setHidden] = useState("hidden");
 
-  const handleClickButton = (data) => {
+  const handleClickEdit = (data) => {
     let idButton = data.idButton;
 
     if (idButton === "editButton") {
@@ -15,11 +15,24 @@ function App() {
       setHidden("hidden");
     }
   };
+  const handleClickReset = (data) => {
+    let idButton = data.idButton;
+
+    if (idButton === "resetButton") {
+      setHidden("hidden");
+    } else {
+      setHidden("section-detail");
+    }
+  };
 
   return (
     <div className='App'>
       <Header />
-      <Main handleClickButton={handleClickButton} hidden={hidden} />
+      <Main
+        handleClickEdit={handleClickEdit}
+        hidden={hidden}
+        handleClickReset={handleClickReset}
+      />
     </div>
   );
 }

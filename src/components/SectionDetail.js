@@ -1,4 +1,10 @@
 function SectionDetail(props) {
+  const handleClickResetButton = (ev) => {
+    props.handleClickReset({
+      idButton: ev.currentTarget.id,
+    });
+  };
+
   return (
     <section className={`section-detail ${props.hidden} `}>
       <form action='' className='form'>
@@ -80,6 +86,8 @@ function SectionDetail(props) {
                 className='button-wraper__reset'
                 type='reset'
                 value='Cancelar'
+                id='resetButton'
+                onClick={handleClickResetButton}
               />
 
               <input

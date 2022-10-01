@@ -4,8 +4,11 @@ import SectionDetail from "./SectionDetail";
 function Main(props) {
   return (
     <main className='main'>
-      <SectionIncidence handleClickButton={props.handleClickButton} />
-      <SectionDetail hidden={props.hidden} />
+      <SectionIncidence handleClickEdit={props.handleClickEdit} />
+      <SectionDetail
+        hidden={props.hidden}
+        handleClickReset={props.handleClickReset}
+      />
     </main>
   );
 }

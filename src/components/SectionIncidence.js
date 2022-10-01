@@ -1,8 +1,8 @@
 import telefonoRoto from "../images/telefono-roto.jpg";
 
 function SectionIncidence(props) {
-  const handleClick = (ev) => {
-    props.handleClickButton({
+  const handleClickEditButton = (ev) => {
+    props.handleClickEdit({
       idButton: ev.currentTarget.id,
     });
   };
@@ -29,7 +29,7 @@ function SectionIncidence(props) {
           className='input-button'
           type='submit'
           value='Modificar incidencia'
-          onClick={handleClick}
+          onClick={handleClickEditButton}
           id='editButton'
         />
       </article>
