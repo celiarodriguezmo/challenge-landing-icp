@@ -1,0 +1,112 @@
+.section-detail {
+  width: 50%;
+  padding: 0 70px 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  width: 100%;
+
+  &__title {
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+
+  &__section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &--area {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.input-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 15px;
+
+  &--area {
+    width: 570px;
+    margin-left: 15px;
+  }
+}
+
+.button-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.label-text {
+  width: 270px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+}
+.input {
+  width: 270px;
+  height: 32px;
+
+  background: radial-gradient(
+        circle at 100% 100%,
+        $White 0,
+        $White 6px,
+        transparent 6px
+      )
+      0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, $White 0, $White 6px, transparent 6px)
+      100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, $White 0, $White 6px, transparent 6px) 0%
+      100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, $White 0, $White 6px, transparent 6px) 100%
+      100%/8px 8px no-repeat,
+    linear-gradient($White, $White) 50% 50% / calc(100% - 4px) calc(100% - 16px)
+      no-repeat,
+    linear-gradient($White, $White) 50% 50% / calc(100% - 16px) calc(100% - 4px)
+      no-repeat,
+    radial-gradient(transparent 30%, $Primary 100%);
+  border-radius: 8px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: none;
+
+  &--area {
+    width: 570px;
+    margin-top: 5px;
+    background: radial-gradient(
+          circle at 100% 100%,
+          $White 0,
+          $White 6px,
+          transparent 6px
+        )
+        0% 0%/8px 8px no-repeat,
+      radial-gradient(circle at 0 100%, $White 0, $White 6px, transparent 6px)
+        100% 0%/8px 8px no-repeat,
+      radial-gradient(circle at 100% 0, $White 0, $White 6px, transparent 6px)
+        0% 100%/8px 8px no-repeat,
+      radial-gradient(circle at 0 0, $White 0, $White 6px, transparent 6px) 100%
+        100%/8px 8px no-repeat,
+      linear-gradient($White, $White) 50% 50% / calc(100% - 4px)
+        calc(100% - 16px) no-repeat,
+      linear-gradient($White, $White) 50% 50% / calc(100% - 16px)
+        calc(100% - 4px) no-repeat,
+      radial-gradient(transparent 30%, $Primary 100%);
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+  }
+
+  &--file {
+    width: 570px;
+    height: 32px;
+    margin: 20px 0 10px 15px;
+  }
+}

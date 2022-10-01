@@ -6,22 +6,26 @@ function App() {
   return (
     <div className='App'>
       <header className='header'>
-        <nav className='navMenu'>
-          <ul className='menuList'>
-            <li className='menuList__item'>Inicio</li>
-            <li className='menuList__item'>Incidencias</li>
-            <li className='menuList__item'>Almacén</li>
-            <li className='menuList__item'>Servicio técnico</li>
+        <nav className='nav-menu'>
+          <ul className='menu-list'>
+            <li className='menu-list__item'>Inicio</li>
+            <li className='menu-list__item'>Incidencias</li>
+            <li className='menu-list__item'>Almacén</li>
+            <li className='menu-list__item'>Servicio técnico</li>
           </ul>
-          <img className='menuImage' src={avatar} alt='imagen de perfil' />
+          <img className='menu-image' src={avatar} alt='imagen de perfil' />
         </nav>
       </header>
-      <main>
+      <main className='main'>
         <section className='section-incidence'>
-          <img src={telefonoRoto} alt='imagen de teléfono con pantalla rota' />
-          <div>
-            <h2>Título de la incidencia</h2>
-            <p>fecha</p>
+          <img
+            className='section-incidence__image'
+            src={telefonoRoto}
+            alt='imagen de teléfono con pantalla rota'
+          />
+          <div className='section-incidence__wrap'>
+            <h3 className='wrap__title'>Título de la incidencia</h3>
+            <p className='wrap__date'>fecha</p>
           </div>
           <article>
             <h3>Descripción:</h3>
@@ -35,54 +39,97 @@ function App() {
         </section>
         <section className='section-detail'>
           <form action='' className='form'>
-            <legend className='form__title'>Modificar incidencia</legend>
+            <h3 className='form__title'>Modificar incidencia</h3>
             <fieldset className='form__section'>
-              <label htmlFor='name' className='label-text'>
-                Nombre
-              </label>
-              <input type='text' name='name' id='name' />
+              <div className='input-wraper'>
+                <label htmlFor='name' className='label-text'>
+                  Nombre
+                </label>
+                <input className='input' type='text' name='name' id='name' />
+              </div>
+              <div className='input-wraper'>
+                <label htmlFor='surname' className='label-text'>
+                  Apellidos
+                </label>
+                <input
+                  className='input'
+                  type='text'
+                  name='surname'
+                  id='surname'
+                />
+              </div>
 
-              <label htmlFor='surname' className='label-text'>
-                Apellidos
-              </label>
-              <input type='text' name='surname' id='surname' />
-
-              <label htmlFor='id-employee' className='label-text'>
-                Id Empleado
-              </label>
-              <input type='text' name='id-employee' id='id-employee' />
+              <div className='input-wraper'>
+                <label htmlFor='id-employee' className='label-text'>
+                  Id Empleado
+                </label>
+                <input
+                  className='input'
+                  type='text'
+                  name='id-employee'
+                  id='id-employee'
+                />
+              </div>
             </fieldset>
 
             <fieldset className='form__section'>
-              <label htmlFor='warehouse-sector' className='label-text'>
-                Sector almacén
-              </label>
+              <div className='input-wraper'>
+                <label htmlFor='warehouse-sector' className='label-text'>
+                  Sector almacén
+                </label>
+                <input
+                  className='input'
+                  type='text'
+                  name='warehouse-sector'
+                  id='warehouse-sector'
+                />
+              </div>
+              <div className='input-wraper'>
+                <label htmlFor='position' className='label-text'>
+                  Posición
+                </label>
+                <input
+                  className='input'
+                  type='text'
+                  name='position'
+                  id='position'
+                />
+              </div>
+
               <input
-                type='text'
-                name='warehouse-sector'
-                id='warehouse-sector'
+                className='input--file'
+                type='file'
+                name='attached-image'
+                id='attached-image'
+                width='170'
               />
-
-              <label htmlFor='position' className='label-text'>
-                Posición
-              </label>
-              <input type='text' name='position' id='position' />
-
-              <input type='file' name='attached-image' id='attached-image' />
             </fieldset>
 
-            <fieldset className='form__section'>
-              <label htmlFor='comments' className='label-text'>
-                Descripción incidencia
-              </label>
-              <textarea
-                id='comments'
-                name='comments'
-                rows='8'
-                cols='80'
-              ></textarea>
-              <input type='submit' value='Enviar' />
-              <input type='reset' value='Cancelar' />
+            <fieldset className='form__section--area'>
+              <div className='input-wraper--area'>
+                <label htmlFor='comments' className='label-text'>
+                  Descripción incidencia
+                </label>
+                <textarea
+                  className='input--area'
+                  id='comments'
+                  name='comments'
+                  rows='8'
+                  cols='80'
+                ></textarea>
+                <div className='button-wraper'>
+                  <input
+                    className='input-button'
+                    type='submit'
+                    value='Enviar'
+                  />
+                  <input
+                    className='input-reset'
+                    type='reset'
+                    value='Cancelar'
+                  />
+                </div>
+              </div>
             </fieldset>
           </form>
         </section>
