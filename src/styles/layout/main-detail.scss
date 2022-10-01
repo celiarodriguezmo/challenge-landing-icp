@@ -1,10 +1,11 @@
 .section-detail {
-  width: 50%;
   display: flex;
   flex-direction: column;
+  margin-left: 22.5px;
 }
 .form {
-  width: 100%;
+  max-width: 600px;
+  margin-top: 22px;
 
   &__title {
     margin-left: 15px;
@@ -77,23 +78,23 @@
   background: radial-gradient(
         circle at 100% 100%,
         $White 0,
-        $White 6px,
-        transparent 6px
+        $White 5px,
+        transparent 5px
       )
-      0% 0%/8px 8px no-repeat,
-    radial-gradient(circle at 0 100%, $White 0, $White 6px, transparent 6px)
-      100% 0%/8px 8px no-repeat,
-    radial-gradient(circle at 100% 0, $White 0, $White 6px, transparent 6px) 0%
-      100%/8px 8px no-repeat,
-    radial-gradient(circle at 0 0, $White 0, $White 6px, transparent 6px) 100%
-      100%/8px 8px no-repeat,
-    linear-gradient($White, $White) 50% 50% / calc(100% - 4px) calc(100% - 16px)
+      0% 0%/6px 6px no-repeat,
+    radial-gradient(circle at 0 100%, $White 0, $White 5px, transparent 5px)
+      100% 0%/6px 6px no-repeat,
+    radial-gradient(circle at 100% 0, $White 0, $White 5px, transparent 5px) 0%
+      100%/6px 6px no-repeat,
+    radial-gradient(circle at 0 0, $White 0, $White 5px, transparent 5px) 100%
+      100%/6px 6px no-repeat,
+    linear-gradient($White, $White) 50% 50% / calc(100% - 2px) calc(100% - 12px)
       no-repeat,
-    linear-gradient($White, $White) 50% 50% / calc(100% - 16px) calc(100% - 4px)
+    linear-gradient($White, $White) 50% 50% / calc(100% - 12px) calc(100% - 2px)
       no-repeat,
-    radial-gradient(transparent 30%, $Primary 100%);
-  border-radius: 8px;
-  padding: 15px;
+    radial-gradient($Secondary 0%, $Primary 100%);
+  border-radius: 6px;
+  padding: 16px;
   box-sizing: border-box;
   border: none;
 
@@ -103,23 +104,23 @@
     background: radial-gradient(
           circle at 100% 100%,
           $White 0,
-          $White 6px,
-          transparent 6px
+          $White 5px,
+          transparent 5px
         )
-        0% 0%/8px 8px no-repeat,
-      radial-gradient(circle at 0 100%, $White 0, $White 6px, transparent 6px)
-        100% 0%/8px 8px no-repeat,
-      radial-gradient(circle at 100% 0, $White 0, $White 6px, transparent 6px)
-        0% 100%/8px 8px no-repeat,
-      radial-gradient(circle at 0 0, $White 0, $White 6px, transparent 6px) 100%
-        100%/8px 8px no-repeat,
-      linear-gradient($White, $White) 50% 50% / calc(100% - 4px)
-        calc(100% - 16px) no-repeat,
-      linear-gradient($White, $White) 50% 50% / calc(100% - 16px)
-        calc(100% - 4px) no-repeat,
-      radial-gradient(transparent 30%, $Primary 100%);
-    border-radius: 8px;
-    padding: 15px;
+        0% 0%/6px 6px no-repeat,
+      radial-gradient(circle at 0 100%, $White 0, $White 5px, transparent 5px)
+        100% 0%/6px 6px no-repeat,
+      radial-gradient(circle at 100% 0, $White 0, $White 5px, transparent 5px)
+        0% 100%/6px 6px no-repeat,
+      radial-gradient(circle at 0 0, $White 0, $White 5px, transparent 5px) 100%
+        100%/6px 6px no-repeat,
+      linear-gradient($White, $White) 50% 50% / calc(100% - 2px)
+        calc(100% - 12px) no-repeat,
+      linear-gradient($White, $White) 50% 50% / calc(100% - 12px)
+        calc(100% - 2px) no-repeat,
+      radial-gradient($White 0%, $Primary 100%);
+    border-radius: 6px;
+    padding: 16px;
     box-sizing: border-box;
     border: none;
   }
