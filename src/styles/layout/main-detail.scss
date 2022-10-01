@@ -1,6 +1,5 @@
 .section-detail {
   width: 50%;
-  padding: 0 70px 0 15px;
   display: flex;
   flex-direction: column;
 }
@@ -42,6 +41,27 @@
   flex-direction: row;
   justify-content: flex-end;
   margin-top: 40px;
+
+  &__send {
+    width: 75px;
+    height: 32px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: $Primary;
+    color: $White;
+    border-radius: 5px;
+    border: none;
+  }
+  &__reset {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: $White;
+    color: $Primary;
+    border-radius: 5px;
+    border: none;
+  }
 }
 
 .label-text {

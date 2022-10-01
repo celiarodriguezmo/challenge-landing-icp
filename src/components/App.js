@@ -25,16 +25,20 @@ function App() {
           />
           <div className='section-incidence__wrap'>
             <h3 className='wrap__title'>Título de la incidencia</h3>
-            <p className='wrap__date'>fecha</p>
+            <p className='wrap__date'>12/08/22</p>
           </div>
-          <article>
-            <h3>Descripción:</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-              iusto aut, quaerat pariatur impedit ipsa. Necessitatibus quaerat,
-              commodi amet non ipsum eveniet molestias ea dolore!
+          <article className='section-incidence__article'>
+            <h3 className='article__title'>Descripción:</h3>
+            <p className='article__text'>
+              Lorem ipsum adipisicing elit. Mollitia impedit perspiciatis
+              voluptatem laboriosam, obcaecati veniam. Dolorem minus dolore
+              repudiandae atrium reprehenderit ie sequi. Laudantium, quis.
             </p>
-            <button>Modificar incidencia</button>
+            <input
+              className='input-button'
+              type='submit'
+              value='Modificar incidencia'
+            />
           </article>
         </section>
         <section className='section-detail'>
@@ -119,14 +123,15 @@ function App() {
                 ></textarea>
                 <div className='button-wraper'>
                   <input
-                    className='input-button'
-                    type='submit'
-                    value='Enviar'
-                  />
-                  <input
-                    className='input-reset'
+                    className='button-wraper__reset'
                     type='reset'
                     value='Cancelar'
+                  />
+
+                  <input
+                    className='button-wraper__send'
+                    type='submit'
+                    value='Enviar'
                   />
                 </div>
               </div>
