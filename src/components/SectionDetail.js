@@ -1,6 +1,6 @@
-function SectionDetail() {
+function SectionDetail(props) {
   return (
-    <section className='section-detail'>
+    <section className={`section-detail ${props.hidden} `}>
       <form action='' className='form'>
         <h3 className='form__title'>Modificar incidencia</h3>
         <fieldset className='form__section'>
