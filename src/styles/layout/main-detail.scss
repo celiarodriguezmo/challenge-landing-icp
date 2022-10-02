@@ -1,11 +1,20 @@
 .section-detail {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 22.5px;
+  margin: 0 15px;
+  @include tablet {
+    width: 55%;
+    margin-left: 7.5px;
+  }
+  @include desktop {
+    margin-left: 22.5px;
+  }
 }
+
 .form {
-  max-width: 600px;
-  margin-top: 22px;
+  max-width: 500px;
+  margin-top: 40px;
 
   &__title {
     margin-left: 15px;
@@ -23,45 +32,80 @@
       display: flex;
       flex-direction: column;
     }
+
+    @include tablet {
+      max-width: 400px;
+    }
+    @include desktop {
+      max-width: 570px;
+    }
+  }
+
+  @include tablet {
+    max-width: 400px;
+    margin-top: 22px;
+  }
+  @include desktop {
+    max-width: 570px;
   }
 }
+
 .input-wraper {
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin: 15px;
 
   &--area {
-    width: 570px;
+    display: flex;
+    flex-direction: column;
     margin-left: 15px;
+    @include tablet {
+      width: 370px;
+    }
+  }
+  @include tablet {
+    width: 170px;
   }
 }
 
 .button-wraper {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: flex-end;
   margin-top: 40px;
 
   &__send {
     width: 75px;
     height: 32px;
-    margin-left: 10px;
+
     font-weight: bold;
     font-size: 0.9rem;
     background-color: $Primary;
     color: $White;
     border-radius: 5px;
     border: none;
+
+    @include tablet {
+      margin-left: 10px;
+    }
   }
   &__reset {
-    margin-right: 10px;
+    margin-left: 10px;
     font-weight: bold;
     font-size: 0.9rem;
     background-color: $White;
     color: $Primary;
     border-radius: 5px;
     border: none;
+    @include tablet {
+      margin-right: 10px;
+    }
+  }
+  @include tablet {
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
 
@@ -71,8 +115,9 @@
   font-size: 0.85rem;
   margin-bottom: 5px;
 }
+
 .input {
-  width: 270px;
+  width: 300px;
   height: 32px;
 
   background: radial-gradient(
@@ -99,7 +144,7 @@
   border: none;
 
   &--area {
-    width: 570px;
+    width: 300px;
     margin-top: 5px;
     background: radial-gradient(
           circle at 100% 100%,
@@ -123,14 +168,30 @@
     padding: 16px;
     box-sizing: border-box;
     border: none;
+
+    @include tablet {
+      width: 370px;
+    }
   }
 
   &--file {
-    width: 570px;
+    width: 300px;
     height: 32px;
     margin: 20px 0 10px 15px;
+
+    @include tablet {
+      width: 570px;
+    }
+  }
+
+  @include tablet {
+    width: 170px;
+  }
+  @include desktop {
+    width: 250px;
   }
 }
+
 .hidden {
   display: none;
 }

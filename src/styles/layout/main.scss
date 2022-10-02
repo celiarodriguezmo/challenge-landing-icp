@@ -2,6 +2,15 @@
   width: 100vw;
   margin: 15px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: left;
+    padding: 0px 20px;
+  }
+  @include desktop {
+    padding: 0px 150px;
+  }
 }
