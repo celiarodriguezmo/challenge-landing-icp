@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  vertical-align: middle;
   background-color: $Secondary;
   color: $Primary;
 }
@@ -13,16 +14,34 @@
   justify-content: space-evenly;
 }
 .menu-list {
-  width: 70%;
   display: flex;
+  align-items: center;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.8rem;
 
   &__item {
-    margin: 20px;
+    margin: 5px;
+
+    @include tablet {
+      margin: 10px;
+      font-size: 1rem;
+    }
+    @include desktop {
+      margin: 20px;
+    }
+  }
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    width: 70%;
   }
 }
 .menu-image {
-  width: 60px;
+  width: 45px;
   border-radius: 50%;
+
+  @include tablet {
+    width: 70px;
+  }
 }
