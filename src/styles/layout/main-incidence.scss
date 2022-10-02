@@ -7,7 +7,7 @@
   &__image {
     width: 100%;
     min-width: 300px;
-    max-width: 520px;
+    max-width: 320px;
     justify-self: flex-start;
 
     @include tablet {
@@ -19,23 +19,32 @@
     }
   }
   &__wrap {
-    max-width: 500px;
+    max-width: 320px;
     padding: 38px 15px 10px 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    @include tablet {
+      max-width: 500px;
+    }
+
     @include desktop {
       max-width: 500px;
     }
   }
   &__article {
     width: 100%;
-    max-width: 500px;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: left;
     padding: 8px 15px 10px 15px;
+
+    @include tablet {
+      max-width: 500px;
+    }
 
     @include desktop {
       max-width: 500px;
