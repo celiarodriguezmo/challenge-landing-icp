@@ -7,6 +7,9 @@
   vertical-align: middle;
   background-color: $Secondary;
   color: $Primary;
+  @include tablet {
+    height: 15vh;
+  }
 }
 .nav-menu {
   display: flex;

@@ -65,7 +65,7 @@
   font-size: 1rem;
 }
 .wrap__date {
-  font-weight: bold;
+  font-weight: 300;
   color: $Grey;
 }
 .article__title {
@@ -75,11 +75,13 @@
 .article__text {
   justify-self: flex-start;
   margin-bottom: 20px;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 .input-button {
   width: 175px;
   height: 32px;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 0.9rem;
   background-color: $Primary;
   color: $White;

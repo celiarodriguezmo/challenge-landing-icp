@@ -82,8 +82,7 @@
   &__send {
     width: 75px;
     height: 32px;
-
-    font-weight: bold;
+    font-weight: 300;
     font-size: 0.9rem;
     background-color: $Primary;
     color: $White;
@@ -96,7 +95,7 @@
   }
   &__reset {
     margin-left: 10px;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 0.9rem;
     background-color: $White;
     color: $Primary;
