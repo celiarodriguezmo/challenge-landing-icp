@@ -7,7 +7,7 @@
   &__image {
     width: 100%;
     min-width: 300px;
-    max-width: 650px;
+    max-width: 520px;
     justify-self: flex-start;
 
     @include tablet {
@@ -15,24 +15,31 @@
     }
 
     @include desktop {
-      max-width: 400px;
+      max-width: 500px;
     }
   }
   &__wrap {
-    max-width: 570px;
+    max-width: 500px;
     padding: 38px 15px 10px 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    @include desktop {
+      max-width: 500px;
+    }
   }
   &__article {
     width: 100%;
-    max-width: 570px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: left;
     padding: 8px 15px 10px 15px;
+
+    @include desktop {
+      max-width: 500px;
+    }
   }
 
   @include tablet {
@@ -42,6 +49,7 @@
   }
   @include desktop {
     margin: 0px;
+    min-width: 500px;
   }
 }
 .wrap__title {

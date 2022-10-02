@@ -8,7 +8,7 @@
     margin-left: 7.5px;
   }
   @include desktop {
-    margin-left: 22.5px;
+    margin-left: 15px;
   }
 }
 
@@ -37,7 +37,7 @@
       max-width: 400px;
     }
     @include desktop {
-      max-width: 570px;
+      min-width: 570px;
     }
   }
 
@@ -67,6 +67,9 @@
   }
   @include tablet {
     width: 170px;
+  }
+  @include desktop {
+    width: 255px;
   }
 }
 
@@ -106,6 +109,9 @@
   @include tablet {
     flex-direction: row;
     justify-content: flex-end;
+  }
+  @include desktop {
+    width: 540px;
   }
 }
 
@@ -172,6 +178,9 @@
     @include tablet {
       width: 370px;
     }
+    @include desktop {
+      width: 540px;
+    }
   }
 
   &--file {
@@ -188,7 +197,7 @@
     width: 170px;
   }
   @include desktop {
-    width: 250px;
+    width: 255px;
   }
 }
 

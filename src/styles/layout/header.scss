@@ -43,6 +43,10 @@
   border-radius: 50%;
 
   @include tablet {
+    width: 50px;
+  }
+
+  @include tablet {
     width: 60px;
   }
 }
