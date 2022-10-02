@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.bae01f77.css",
+    "main.css": "./static/css/main.74b62109.css",
     "main.js": "./static/js/main.c84ce51a.js",
     "static/media/telefono-roto.jpg": "./static/media/telefono-roto.a06235f5ed650a9a4681.jpg",
     "static/media/avatar.svg": "./static/media/avatar.40206842400fc370d23684f0a7773847.svg",
     "index.html": "./index.html",
-    "main.bae01f77.css.map": "./static/css/main.bae01f77.css.map",
+    "main.74b62109.css.map": "./static/css/main.74b62109.css.map",
     "main.c84ce51a.js.map": "./static/js/main.c84ce51a.js.map"
   },
   "entrypoints": [
-    "static/css/main.bae01f77.css",
+    "static/css/main.74b62109.css",
     "static/js/main.c84ce51a.js"
   ]
 }
